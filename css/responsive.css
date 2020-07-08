@@ -50,7 +50,7 @@
 .navbar-st {
     position: fixed !important;
     top: 0;
-    width: 100%;
+    min-width: 1500px;
     z-index: 99999;
     background: white !important;
     -webkit-box-shadow: 1px 4px 20px 4px gray;
@@ -102,10 +102,6 @@
 @media screen and (max-width: 767px) {
     .navbar-gen {
         margin-top: 0;
-        position: fixed !important;
-        top: 0;
-        width: 100%;
-        z-index: 99999;
         background: white !important;
     }
     .navbar-gen a {
@@ -122,11 +118,7 @@
 
 @media screen and (min-width: 1024px) {
     .navbar-gen {
-        margin-top: 10px;
-        position: fixed !important;
-        top: 0;
-        width: 100%;
-        z-index: 99999;
+        margin-top: 20px;
         background: transparent !important;
     }
     .navbar-gen a {

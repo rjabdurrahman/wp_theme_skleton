@@ -1,0 +1,219 @@
+$content-width: 1500px;
+
+header {
+    display        : flex;
+    justify-content: center;
+
+    .navbar-gen {
+        position: fixed !important;
+        top     : 0;
+        z-index : 99999;
+        min-width: $content-width;
+    }
+}
+
+body {
+    margin          : 0;
+    padding         : 0;
+    font-family     : 'Roboto', sans-serif;
+    background-color: lightblue;
+}
+
+.bg-mypri {
+    /* background-color: #117a8b; */
+    background-color   : #1b00ff;
+    /* background-color: transparent; */
+    color              : white;
+    /* border-color    : #117a8b; */
+    border-color       : #1b00ff;
+}
+
+.robo-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.mont-font {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+.ex-font {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.my-container {
+    position  : relative;
+    width     : 100%;
+    height    : 98vh;
+    background: rgb(2, 0, 36);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 1)), color-stop(0%, rgba(0, 212, 255, 1)), color-stop(95%, rgba(138, 87, 180, 1)));
+    background: -o-linear-gradient(left, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(138, 87, 180, 1) 95%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(138, 87, 180, 1) 95%);
+}
+
+.my-container .bottom-wave {
+    position         : absolute;
+    bottom           : 0;
+    width            : 100%;
+    height           : 50px;
+    background       : url('../img/wave.png');
+    background-repeat: repeat-x;
+    background-size  : contain;
+}
+
+.middle-container {
+    padding-top: 300px;
+    overflow   : hidden;
+    width: $content-width;
+    margin: auto;
+}
+
+.sec-container {
+    color    : white;
+    /* border: 1px solid red; */
+    padding  : 12px;
+    width    : 700px;
+}
+
+.sec-container.sc-first {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sec-container.sc-second {
+    width: 500px;
+}
+
+.sec-container.sc-second .form-group input {
+    border-radius: 24px;
+    padding      : 8px 10px 8px 16px;
+}
+
+.sec-container .heading {
+    font-size    : 50px;
+    margin-bottom: 15px;
+}
+
+.sec-container p {
+    font-size    : 20px;
+    margin-bottom: 35px;
+}
+
+.sec-container .btn {
+    border-radius: 24px;
+    padding-left : 40px;
+    padding-right: 40px;
+    font-size    : 20px;
+}
+
+@media (max-width: 640px) {
+    .my-container .bottom-wave {
+        position         : absolute;
+        bottom           : 0;
+        width            : 100%;
+        height           : 100px;
+        background       : url('./wave.png');
+        background-repeat: repeat-x;
+        background-size  : cover;
+    }
+}
+
+.part-2 {
+    margin: 40px 40px;
+}
+
+.part-2 div h1 {
+    color        : #007bff;
+    margin-bottom: 20px;
+}
+
+/* Part 3 */
+
+.part-3 {
+    background-color: #cbe9ee;
+    padding         : 40px 40px 20px;
+}
+
+.part-3 img {
+    height : 200px;
+    width  : 200px;
+    display: block;
+    margin : auto;
+}
+
+.part-3 p {
+    text-align : center;
+    margin-top : 12px;
+    font-size  : 20px;
+    font-weight: 500;
+    color      : #0f0f0f;
+}
+
+/* Part 3 End */
+
+footer {
+    background-color: #11C5F6;
+    padding         : 25px 40px 12px;
+    color           : white;
+}
+
+footer div.d-flex div:first-child {
+    flex: 2;
+}
+
+footer div.flex-row>div {
+    flex: 1;
+}
+
+footer h4 {
+    font-family   : 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+footer a {
+    color: white;
+}
+
+footer .nav-link {
+    display: inline-block;
+    padding: .2rem 1rem;
+}
+
+footer .last {
+    border-top: 1px solid lightgrey;
+    text-align: center;
+    padding   : 10px;
+    margin-top: 5px;
+    font-size : 16px;
+    color     : rgb(238, 238, 238);
+}
+
+footer .newsletter {
+    margin: 8px 0 20px;
+}
+
+footer .newsletter input,
+footer .newsletter .btn {
+    border-radius        : 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius   : 0;
+    -ms-border-radius    : 0;
+    -o-border-radius     : 0;
+}
+
+.follow a {
+    font-size: 40px !important;
+}
+
+.nav.follow {
+    line-height: normal;
+}
+
+.follow a.nav-link {
+    margin : 8px;
+    padding: 4px;
+}
+
+.follow a:hover {
+    color: blue;
+}

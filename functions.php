@@ -19,6 +19,8 @@ function load_js()
 {
     wp_register_script('bootstrap', get_template_directory_uri() . '/vendors/bootstrap/js/bootstrap.min.js', 'jquery', false, true);
     wp_enqueue_script('bootstrap');
+    wp_register_script('fa', get_template_directory_uri() . '/js/font-awesome.js', null, false, false);
+    wp_enqueue_script('fa');
 }
 
 add_action('wp_enqueue_scripts', 'load_js');
