@@ -1,0 +1,119 @@
+/* for arrow */
+
+.dropdown-menu::before {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    content: "";
+    display: inline-block;
+    left: 30px;
+    position: absolute;
+    top: -8px;
+}
+
+.navbar-gen .dropdown-menu::before {
+    border-bottom: 9px solid #0069D9;
+}
+
+.navbar-st .dropdown-menu::before {
+    border-bottom: 9px solid lightgrey;
+}
+
+.navbar-gen .dropdown-menu {
+    background-color: #0069D9 !important;
+}
+
+.navbar-gen .dropdown-menu a {
+    background-color: #0069D9 !important;
+}
+
+.navbar-gen .dropdown-menu a:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.navbar-st {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    background: white !important;
+    -webkit-box-shadow: 1px 4px 20px 4px gray;
+    box-shadow: 1px 4px 20px 4px gray;
+}
+
+.navbar-st a {
+    color: black !important;
+}
+
+.navbar .navbar-nav {
+    position: absolute;
+    right: 40px;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+}
+
+.navbar .navbar-nav .nav-item.special .btn {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar .navbar-nav .nav-item.special .btn {
+    border-radius: 24px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: -.055em;
+    border: none;
+    content: "\f107" !important;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+}
+
+/* Small Screen */
+
+@media screen and (max-width: 767px) {
+    .navbar-gen {
+        margin-top: 0;
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        z-index: 99999;
+        background: white !important;
+    }
+    .navbar-gen a {
+        color: white !important;
+    }
+    .navbar-nav {
+        background-color: white !important;
+        width: 100% !important;
+        color: black !important;
+    }
+}
+
+/* Large Screen */
+
+@media screen and (min-width: 1024px) {
+    .navbar-gen {
+        margin-top: 10px;
+        position: fixed !important;
+        top: 0;
+        width: 100%;
+        z-index: 99999;
+        background: transparent !important;
+    }
+    .navbar-gen a {
+        color: white !important;
+    }
+}
