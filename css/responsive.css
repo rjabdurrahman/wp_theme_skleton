@@ -1,21 +1,37 @@
 /* for arrow */
 
-.dropdown-menu::before {
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
-    content: "";
-    display: inline-block;
-    left: 30px;
-    position: absolute;
-    top: -8px;
-}
-
 .navbar-gen .dropdown-menu::before {
-    border-bottom: 9px solid #0069D9;
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    top: -6px;
+    margin-left: 35px;
+    background-color: #0069D9;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
 
 .navbar-st .dropdown-menu::before {
-    border-bottom: 9px solid lightgrey;
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    top: -6px;
+    margin-left: 35px;
+    background-color: white;
+    border-left: 1px solid rgba(0,0,0,.15);
+    border-top: 1px solid rgba(0,0,0,.15);
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
 
 .navbar-gen .dropdown-menu {
