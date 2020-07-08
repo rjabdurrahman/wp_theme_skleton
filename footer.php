@@ -1,7 +1,7 @@
 <footer>
         <div class="d-flex flex-row">
             <div style="margin-right: 60px;">
-                <img src="img/brand.png" alt="Brand" height="50" width="180" srcset="">
+                <img src="<?php echo get_template_directory_uri() . '/img/brand.png'; ?>" alt="Brand" height="50" width="180" srcset="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis libero rem repellat odio incidunt
                     rerum iste distinctio, aperiam ea iure! <br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam provident quaerat ipsam

@@ -46,15 +46,15 @@
     </div>
     <div class="part-3 d-flex justify-content-around ex-font">
         <div>
-            <img src="<?php echo get_template_directory_uri() . 'img/icon-1.png'; ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/img/icon-1.png'; ?>" alt="">
             <p>Get Started and Be Connected</p>
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . 'img/icon-2.svg'; ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/img/icon-2.svg'; ?>" alt="">
             <p>Join with Community</p>
         </div>
         <div>
-            <img src="<?php echo get_template_directory_uri() . 'img/icon-3.svg'; ?>" alt="">
+            <img src="<?php echo get_template_directory_uri() . '/img/icon-3.svg'; ?>" alt="">
             <p>Be Certified and Contribute</p>
         </div>
     </div>
