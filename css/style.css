@@ -7,6 +7,24 @@ header {
           justify-content: center;
 }
 
+header .navbar .navbar-brand img {
+  height: 60px;
+  width: 60px;
+}
+
+header .navbar .navbar-brand img + div {
+  display: inline-block;
+  background-color: #0070C0;
+}
+
+header .navbar .navbar-brand img + div span:first-child {
+  color: #F79646;
+}
+
+header .navbar .navbar-brand img + div span:nth-child(2) {
+  color: #FFFF00;
+}
+
 header .navbar-gen {
   position: fixed !important;
   top: 0;
