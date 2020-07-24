@@ -76,7 +76,6 @@ body {
   background-size: 600% 600%;
   -webkit-animation: GradientAnimation 30s ease infinite;
   animation: GradientAnimation 30s ease infinite;
-  background: rgba(0, 212, 255, 0.9);
 }
 
 .ovlay-container .bottom-wave {
