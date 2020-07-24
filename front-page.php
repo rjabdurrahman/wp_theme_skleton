@@ -4,7 +4,6 @@
         <div class="middle-container d-flex justify-content-center">
             <div class="container sec-container sc-first">
                 <img src="<?php echo get_template_directory_uri() . '/img/meet2.png'; ?>" alt="" srcset="">
-                <!-- <div class="box"></div> -->
             </div>
             <div class="container sec-container sc-second">
                 <div class="heading">Enjoy Tech. Enjoy Investing.</div>

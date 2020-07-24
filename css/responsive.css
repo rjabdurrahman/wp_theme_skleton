@@ -23,8 +23,8 @@
     top: -6px;
     margin-left: 35px;
     background-color: white;
-    border-left: 1px solid rgba(0,0,0,.15);
-    border-top: 1px solid rgba(0,0,0,.15);
+    border-left: 1px solid rgba(0, 0, 0, .15);
+    border-top: 1px solid rgba(0, 0, 0, .15);
     border-right: 1px solid transparent;
     border-bottom: 1px solid transparent;
     transform: rotate(45deg);
@@ -103,6 +103,7 @@
     .navbar-gen {
         margin-top: 0;
         background: white !important;
+        min-width: 100% !important;
     }
     .navbar-gen a {
         color: white !important;
