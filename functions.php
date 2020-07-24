@@ -9,7 +9,7 @@ function load_css()
     wp_enqueue_style('responsive');
     wp_register_style('fa', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css', array(), false, 'all');
     wp_enqueue_style('fa');
-    wp_register_style('googlefonts', 'https://fonts.googleapis.com/css?family=Exo+2:500,700|Montserrat:300|Roboto|Lato:400,700|Pacifico|Barlow+Condensed:400,500,700&display=swap', array(), false, 'all');
+    wp_register_style('googlefonts', 'https://fonts.googleapis.com/css?family=Exo+2:500,700|Montserrat:300|Roboto|Lato:400,700|Pacifico|Barlow+Condensed:400,500,700|Anton&display=swap', array(), false, 'all');
     wp_enqueue_style('googlefonts');
 }
 

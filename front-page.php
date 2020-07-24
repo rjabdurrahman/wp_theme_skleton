@@ -1,15 +1,18 @@
 <?php get_header();?>
-<div class="my-container mont-font">
-    <div class="middle-container d-flex justify-content-center">
-        <div class="container sec-container sc-first">
-            <div class="heading ex-font">Enjoy Tech. Enjoy Investing.</div>
-            <p>0 Commissions and no deposit minimums.<br>
-                Everyone gets smart tools for smart investing.
-            </p>
-            <button type="button" class="btn bg-mypri">Get Started</button>
-        </div>
-        <div class="container sec-container sc-second">
-            <form>
+<div class="overlay-back">
+    <div class="ovlay-container mont-font">
+        <div class="middle-container d-flex justify-content-center">
+            <div class="container sec-container sc-first">
+                <img src="<?php echo get_template_directory_uri() . '/img/meet2.png'; ?>" alt="" srcset="">
+                <!-- <div class="box"></div> -->
+            </div>
+            <div class="container sec-container sc-second">
+                <div class="heading">Enjoy Tech. Enjoy Investing.</div>
+                <p>0 Commissions and no deposit minimums.<br>
+                    Everyone gets smart tools for smart investing.
+                </p>
+                <button type="button" class="btn bg-mypri">Get Started</button>
+                <!-- <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Username or Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -24,10 +27,11 @@
                     <label class="form-check-label" for="exampleCheck1">Remember me</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
-            </form>
+            </form> -->
+            </div>
         </div>
+        <div class="bottom-wave"></div>
     </div>
-    <div class="bottom-wave"></div>
 </div>
 <div class="part-2 d-flex justify-content-center">
     <div>

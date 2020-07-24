@@ -1,13 +1,17 @@
 $content-width: 1500px;
 
+@mixin f-ant {
+    font-family: 'Anton', sans-serif;
+}
+
 header {
     display        : flex;
     justify-content: center;
 
     .navbar-gen {
-        position: fixed !important;
-        top     : 0;
-        z-index : 99999;
+        position : fixed !important;
+        top      : 0;
+        z-index  : 99999;
         min-width: $content-width;
     }
 }
@@ -41,47 +45,128 @@ body {
     font-family: 'Exo 2', sans-serif;
 }
 
-.my-container {
+@-webkit-keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.ovlay-container {
     position  : relative;
     width     : 100%;
     height    : 98vh;
-    background: rgb(2, 0, 36);
-    background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 1)), color-stop(0%, rgba(0, 212, 255, 1)), color-stop(95%, rgba(138, 87, 180, 1)));
-    background: -o-linear-gradient(left, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(138, 87, 180, 1) 95%);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 212, 255, 1) 0%, rgba(138, 87, 180, 1) 95%);
+    background     : linear-gradient(270deg, rgba(0, 212, 255, 0.9),rgba(138, 87, 180, 0.9));
+    background-size: 600% 600%;
+    -webkit-animation: GradientAnimation 30s ease infinite;
+    -moz-animation   : GradientAnimation 30s ease infinite;
+    animation        : GradientAnimation 30s ease infinite;
+    background: rgba(0, 212, 255, 0.9);
+    // background: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 1)), color-stop(0%, rgba(0, 212, 255, 0.5)), color-stop(95%, rgba(138, 87, 180, 0.5)));
+    // background: -o-linear-gradient(left, rgba(2, 0, 36, 0.5) 0%, rgba(0, 212, 255, 1) 0%, rgba(138, 87, 180, 0.5) 95%);
+    // background: linear-gradient(90deg, rgba(0, 212, 255, 0.9) 0%, #00d4ff 40%, rgba(138, 87, 180, 1) 95%);
+
+    .bottom-wave {
+        position         : absolute;
+        bottom           : 0;
+        width            : 100%;
+        height           : 50px;
+        background       : url('../img/wave.png');
+        background-repeat: repeat-x;
+        background-size  : contain;
+    }
+
+    .middle-container {
+        padding-top: 300px;
+        overflow   : hidden;
+        width      : $content-width;
+        margin     : auto;
+    }
 }
 
-.my-container .bottom-wave {
-    position         : absolute;
-    bottom           : 0;
-    width            : 100%;
-    height           : 50px;
-    background       : url('../img/wave.png');
-    background-repeat: repeat-x;
-    background-size  : contain;
-}
-
-.middle-container {
-    padding-top: 300px;
-    overflow   : hidden;
-    width: $content-width;
-    margin: auto;
+.overlay-back {
+    background-image: url('../img/overlay.jpg');
 }
 
 .sec-container {
-    color    : white;
-    /* border: 1px solid red; */
-    padding  : 12px;
-    width    : 700px;
-}
+    color  : white;
+    padding: 12px;
+    width  : 700px;
 
-.sec-container.sc-first {
-    margin-top: 20px;
-    text-align: center;
-}
+    &.sc-first {
+        // .box {
+        //     position        : absolute;
+        //     top             : 75px;
+        //     height          : 486px;
+        //     width           : 653px;
+        //     left            : 20px;
+        //     background-color: yellow;
+        //     border-radius   : 20px;
+        //     transform       : rotate(41deg);
+        //     z-index: 100;
+        // }
 
-.sec-container.sc-second {
-    width: 500px;
+        text-align: center;
+    }
+
+    &.sc-second {
+        width: 500px;
+    }
+
+    .heading {
+        font-size     : 50px;
+        margin-bottom : 15px;
+        text-transform: uppercase;
+        font-weight   : normal;
+        @include f-ant;
+    }
+
+    p {
+        font-size    : 20px;
+        margin-bottom: 35px;
+    }
+
+    .btn {
+        border-radius: 24px;
+        padding-left : 40px;
+        padding-right: 40px;
+        font-size    : 20px;
+    }
 }
 
 .sec-container.sc-second .form-group input {
@@ -89,25 +174,8 @@ body {
     padding      : 8px 10px 8px 16px;
 }
 
-.sec-container .heading {
-    font-size    : 50px;
-    margin-bottom: 15px;
-}
-
-.sec-container p {
-    font-size    : 20px;
-    margin-bottom: 35px;
-}
-
-.sec-container .btn {
-    border-radius: 24px;
-    padding-left : 40px;
-    padding-right: 40px;
-    font-size    : 20px;
-}
-
 @media (max-width: 640px) {
-    .my-container .bottom-wave {
+    .ovlay-container .bottom-wave {
         position         : absolute;
         bottom           : 0;
         width            : 100%;
