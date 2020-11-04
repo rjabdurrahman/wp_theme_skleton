@@ -113,6 +113,9 @@
   .navbar-gen .navbar-nav a {
     color: black;
   }
+  .navbar-st {
+    min-width: 100%;
+  }
 }
 
 /* Large Screen */

@@ -104,20 +104,23 @@
         margin-top: 0;
         background: white !important;
         min-width : 100% !important;
-        right: 0 !important;
+        right     : 0 !important;
 
         .navbar-nav {
             background-color: white !important;
             width           : 100% !important;
-            position: relative;
-            right: 0;
+            position        : relative;
+            right           : 0;
 
             a {
                 color: black;
             }
         }
     }
-
+    
+    .navbar-st {
+        min-width: 100%;
+    }
 }
 
 /* Large Screen */
