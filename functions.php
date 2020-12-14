@@ -17,6 +17,8 @@ add_action('wp_enqueue_scripts', 'load_css');
 
 function load_js()
 {
+    // wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-3.5.1.min.js', null, false, false);
+    // wp_enqueue_script('jquery');
     wp_register_script('bootstrap', get_template_directory_uri() . '/vendors/bootstrap/js/bootstrap.min.js', 'jquery', false, true);
     wp_enqueue_script('bootstrap');
     wp_register_script('fa', get_template_directory_uri() . '/js/font-awesome.js', null, false, false);
@@ -24,6 +26,18 @@ function load_js()
 }
 
 add_action('wp_enqueue_scripts', 'load_js');
+
+
+// Woocommerce Support
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'woocommerce_support' );
+
+// Remove Default Woocommer Styling
+if (class_exists('Woocommerce')){
+    add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
+}
 
 add_theme_support('menus');
 
@@ -33,3 +47,10 @@ register_nav_menus(
         'mobile-menu' => 'Mobile Menu Location',
     )
 );
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);

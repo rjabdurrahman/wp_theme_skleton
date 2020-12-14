@@ -28,7 +28,17 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto mont-font">
+                <?php 
+                    wp_nav_menu(
+                        array(
+                            'menu-location' => 'top-menu',
+                            'container'=> false,
+                            'menu_class' => 'navbar-nav mr-auto mont-font',
+                            'add_li_class'  => 'nav-item'
+                        )
+                    )
+                ?>
+                <!-- <ul class="navbar-nav mr-auto mont-font">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -67,7 +77,7 @@
                     <li class="nav-item special">
                         <button class="btn btn-primary" href="#">Login</button>
                     </li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
     </header>
